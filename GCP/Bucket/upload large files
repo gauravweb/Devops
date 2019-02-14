@@ -1,0 +1,24 @@
+Task upload large file to GCP bucket. This is not a script
+
+# ensure gcloud signin
+
+$ gcloud auth login
+
+# Select the project 
+
+$ gcloud config set project PROJECT_ID
+
+check the bucket 
+
+$ gsutil ls
+
+Get Bucket details 
+$ gsutil ls -L -b gs://nj-backup/
+
+# Upload small file 
+$gsutil cp mdata-rgp.tar.gz gs://nj-backup/mdata
+
+# upload large file 
+
+$ gsutil -o GSUtil:parallel_composite_upload_threshold=150M cp mdata-rgp.tar.gz gs://nj-backup/mdata
+
