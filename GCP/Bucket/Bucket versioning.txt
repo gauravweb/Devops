@@ -1,0 +1,4 @@
+Bucket versioning
+
+$ gsutil versioning set on gs://<bucketname>
+$ gsutil versioning set off gs://<bucketname>
