@@ -1,0 +1,13 @@
+links 
+
+https://medium.com/google-cloud/infrastructure-as-code-iac-for-running-development-tools-on-google-container-engine-gke-using-353f3287d49e
+using
+
+Jenkins: https://github.com/lzysh/ops-gke-jenkins
+
+Upsource: https://github.com/lzysh/ops-gke-upsource
+
+SonarQube: https://github.com/lzysh/ops-gke-sonarqube
+
+GoCD: https://github.com/lzysh/ops-gke-gocd
+
