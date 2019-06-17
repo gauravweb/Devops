@@ -24,5 +24,7 @@ db.staff_info.remove({})
 drop the collection  
 db.staff_info.drop() 
 
+bulk import - 
 
+mongoimport -d cities -c cityinfo —type CSV —file ./cities.csv —headerline
 
