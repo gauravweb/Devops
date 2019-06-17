@@ -1,0 +1,28 @@
+how to check DBs 
+
+# show dbs
+
+switch DB 
+user <DB>
+
+Create DB staff_info
+db.createCollection("staff_info")
+
+insert data in db
+db.staff_info.insert({name:"jenny",phone:"8675309",status:"jessies"})
+
+
+read the row 
+db.staff_info.find()
+
+update
+db.staff_info.updateOne() 
+
+delete 
+db.staff_info.remove({})
+
+drop the collection  
+db.staff_info.drop() 
+
+
+
