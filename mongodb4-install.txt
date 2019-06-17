@@ -1,0 +1,22 @@
+Add repo 
+#cat << EOF > /etc/yum.repos.d/mongodb-org-4.0.repo
+
+[mongodb-org-4.0] 
+name=MongoDB Repository 
+baseurl=https://repo.mongodb.org/yum/redhat/7/mongodb-org/4.0/x86_64/ 
+gpgcheck=1 
+enabled=1 
+gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc 
+EOF
+
+Do the install 
+
+# sudo yum install -y mongodb-org
+
+start Mongodb service 
+
+# sudo service mongod start
+
+verify mongo is runningon port 27017
+
+grep 27017 /var/log/mongodb/mongod.log
